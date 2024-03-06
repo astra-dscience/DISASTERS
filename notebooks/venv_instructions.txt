@@ -25,4 +25,8 @@ This way you are saving also all the dependencies and their versions in requirem
 
 Remember, the requirements.txt file should be included in your version control system. This way, others can install the correct versions of the required packages. To install packages from the requirements.txt file, one would use pip install -r requirements.txt.
 
-Please replace python and pip with python3 and pip3 respectively if you’re using Python 3. If you’re using a different shell (like PowerShell), the commands might vary slightly. If you encounter any issues, please let me know! I’m here to help. 😊
+Please replace python and pip with python3 and pip3 respectively if you’re using Python 3. If you’re using a different shell (like PowerShell), the commands might vary slightly. 
+
+In the end, remember to select your env as a kernel for your project. To enable that, you need to add ipykernel package to requirements.txt file or run: pip install ipykernel. You can use command: 
+pip list
+to check all packages and their versions that are imported in your virtual environment. 
