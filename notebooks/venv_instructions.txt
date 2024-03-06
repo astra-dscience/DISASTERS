@@ -1,0 +1,28 @@
+Here are the steps to set up a virtual environment in a Visual Studio Code (VS Code) repository, including the creation of a requirements.txt file:
+
+Open your project in VS Code: Launch VS Code, then choose File > Open Folder and select the directory of your project.
+Open the terminal in VS Code: You can do this by selecting View > Terminal, or by using the shortcut Ctrl + ~.
+Create a virtual environment: In the terminal, run the following command to create a virtual environment named env (you can name it anything you like):
+python -m venv env
+
+Remember to add this filder to .gitignore file. 
+
+Activate the virtual environment: The command to activate the virtual environment depends on your operating system:
+On Windows, enter:
+.\env\Scripts\activate
+
+On Unix or MacOS, enter:
+source env/bin/activate
+
+Confirm that you’re in the virtual environment: The name of the virtual environment (env in this case) should now appear on the left side of the terminal prompt. This indicates that the virtual environment is active.
+Install necessary packages: Use the pip package manager to install packages. For example, if you need numpy, you would use:
+pip install numpy
+
+Create a requirements.txt file: Once you’ve installed all necessary packages, you can create a requirements.txt file that lists these packages. Run:
+pip freeze > requirements.txt
+
+This way you are saving also all the dependencies and their versions in requirements.txt file. You can also specify just main packages that you need to import in your source code (e.g. pandas, seaborn). 
+
+Remember, the requirements.txt file should be included in your version control system. This way, others can install the correct versions of the required packages. To install packages from the requirements.txt file, one would use pip install -r requirements.txt.
+
+Please replace python and pip with python3 and pip3 respectively if you’re using Python 3. If you’re using a different shell (like PowerShell), the commands might vary slightly. If you encounter any issues, please let me know! I’m here to help. 😊
